@@ -4,11 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Div Element in CSS</title>
-    <style></style>
+    <style>
+        .center {
+            margin: auto;
+            width: 50%;
+            border: 5px solid red;
+            padding: 20px;
+        }
+
+        .container {
+            position: relative;
+            height: 350px;
+            border: 3px solid #006100;
+        }
+
+        .centered-element {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 350px;
+            border: 4px solid purple; 
+        }
+
+
+        .centered-element {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .content {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
 </head>
 <body>
     <div class="center">
         <p>This is Sobur</p>
     </div>
+    
+    <div class="container">
+        <div class="centered-element">
+            <p>Hello, This is Sobur</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="centered-element">
+            <img src="./assets/git.png" alt="Ggit" style="width:40%">
+        </div>
+    </div>
+    <div>
+        <h1 class="content" style="color:tomato">Hello!!! This is me !! Sobur !</h1>
+    </div>
+    
 </body>
 </html>
